@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="csscodes/sign in sign up form.css">
+    <style>
+        .sign-in-buton {
+            margin: auto;
+            margin-top: 20px;
+            width: fit-content;
+        }
+
+        .sign-in-buton>input {
+            color: rgba(0, 0, 255, 0.668);
+            font-size: large;
+            font-family: cursive;
+            background-color: rgba(0, 255, 255, 0.624);
+            border-radius: 7px;
+            padding: 3px;
+            font-weight: bolder;
+            border: none;
+        }
+
+        .sign-in-buton>input:hover {
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="whole-div">
+        <header class="header">
+
+            <div title="go to home page" style=" margin: auto; width: 150px;height: 150px;">
+                <a href="index.html" style="width:150px;">
+                    <div
+                        style=" width: 150px;height: 150px; background-image: url('images/logo.png');background-size: cover;">
+                    </div>
+                </a>
+            </div>
+            <h3>wellcome to sign in page:</h3>
+        </header>
+        <div class="form-layout">
+
+            <fieldset>
+                <legend style="font-family: monospace;color: rgb(24, 221, 221);font-size: xx-large;">enter correct
+                    information</legend>
+                <form action="www.gmail.com" method="post">
+                    <p>
+                        Email:
+                    </p>
+                    <input type="email" placeholder="enter your email" name="email" required>
+                    <p>
+                        password:
+                    </p>
+                    <input type="password" placeholder="enter your password" name="password" required>
+                    <nav class="sign-in-buton">
+                        <input type="submit" value="log in">
+                    </nav>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

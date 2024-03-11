@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>download form</title>
+    <link rel="stylesheet" href="csscodes/home.css">
+    <style>
+        body{
+            background: linear-gradient(to right,green,red);
+        }
+
+
+        
+
+
+        input[type=submit]:hover{
+            box-shadow: 1px 1px 1px rgb(255, 255, 255);
+            transform: scale(1.1);
+            background-color: darkslategrey;
+        }
+
+
+
+        form input{
+            height: 40px; 
+            font-size: 30px;
+            background-color:rgba(0, 194, 91, 0.291) ;
+            color: fuchsia;
+            
+        }
+        input[type]:focus{
+            background-color: beige;
+        }
+
+
+        @media only screen and (max-width:1000px) {
+            body div{
+                width:initial;
+                
+            } 
+
+
+
+
+
+             fieldset *{
+                display: block;
+                color: rgb(225, 255, 0);
+                margin: auto;
+                width: auto;
+             }   
+             
+             
+
+
+             input[type=submit]{
+            color: beige;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div style="font-size: 50px;text-align: center;padding: 20px;">
+        <fieldset style="width: 90%;border: none;">
+            <form action="download.html" style="margin: auto;font-size: 30px;padding: 30px 0 30px 0;">
+                <legend style="font-size: 60px;color: rgb(3, 163, 195);text-decoration:underline;">Enter Information</legend>
+                    <p>
+                        First Name:  <input type="text" name="fname" placeholder="First-name" required="true" size="12"><br>
+                    </p>
+                    <p>
+                        Last Name: <input type="text" name="lname" placeholder="Second-name" ><br>
+                    </p>
+                    <p>
+                        Email:   <input type="email" name="email" placeholder="email"><br>
+                    </p>
+                    <p>
+                        Password: <input type="password" placeholder=" Enter Password" name="password"required="true">
+                    </p>
+                    <p>
+                        <h1>
+                            Gender:
+                        </h1>
+                        Male: <input type="radio" name="gender" value="male" style=" font-size: 60px;" required><br>
+                        Female:<input type="radio" name="gender" value="male" style=" font-size: 60px;"required><br>
+                    </p>
+                <input type="submit"  value="Send">
+
+            </form>
+<form action="">            <input type="submit" formaction="index.html" value="Back To Home">
+</form>
+        </fieldset>
+        
+    </div>
+    <div id="footer">
+        <center>
+            copyright&copy; 2024 by Wubshet Adane:
+        </center>
+        <a href="about-developer.html" id="changeimag" >
+            <img class="footer-image"onmouseover="changeimage()" src="images/editedwub.jpg" style="border-radius: 50px;" width="100px"
+                height="100px" alt="image not found because of some thing!">
+        </a> 
+        <div class="sub-footer">
+            <p>
+                <a href="about-developer.html#contact">contact us</a>
+            </p>
+            <p>
+                <a href="">privacy</a>
+            </p>
+            <p>
+                <a href="">related</a>
+            </p>
+            
+            SWEMcourses.com is optimized for learning, programming, and training. pdfs might be simplified to
+            improve reading and basic understanding. Tutorials, references are constantly reviewed to
+            avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to
+            have read and accepted our terms of use, cookie and privacy policy. Copyright 2024-(---) by WAY.
+            All Rights Reserved.
+            <a href="about-developer.html">Powered by WAY</a>
+        </div>
+    </div>
+</body>
+</html>

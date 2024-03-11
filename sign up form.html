@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="csscodes/sign in sign up form.css">
+    <style>
+        .go-back {
+            color: rgba(0, 0, 255, 0.668);
+            font-family: cursive;
+            background-color: rgba(0, 255, 255, 0.624);
+            border: none;
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            font-weight: bolder;
+            font-size: x-large;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .go-back:hover {
+            background-color: rgb(0, 255, 255);
+        }
+    </style>
+    <script>
+        function formvalidation() {
+            var y = document.forms["myform"]["password"].value;
+            var z = document.forms["myform"]["re-password"].value;
+            var x = document.forms["myform"]["f-name"].value;     
+            var f, text;
+            f = document.forms["myform"]["age"].value;
+
+            if (x == "") {
+                alert("please enter first name!");
+                return false;
+            }
+
+            else if(x.length > 20) {
+                alert("the letters ength in first name not greater than 20! ");     
+               
+            }
+            if (isNaN(f) || f < 1 || f > 100) {
+                
+                alert("enter valid age")
+            } 
+
+           
+
+
+            if (y == "" || z == "") {
+                alert("please enter password!")
+                return false;
+            }
+            else if(y = !z) {
+                alert("passwords are not match!");
+                return false;
+            }
+            
+
+           
+
+
+            
+
+        }
+        
+    </script>
+</head>
+
+<body>
+    <div id="whole-div">
+        <header class="header">
+            <div title="go to home page" style=" margin: auto; width: 150px;height: 150px;">
+                <a href="index.html" style="width:150px;">
+                    <div
+                        style=" width: 150px;height: 150px; background-image: url('images/logo.png');background-size: cover;">
+                    </div>
+                </a>
+            </div>
+            <h3>wellcome to sign up page:</h3>
+        </header>
+        <div class="form-layout">
+            <fieldset>
+                <legend>registration form</legend>
+                <form action="www.google.com" method="post" name="myform" onsubmit="formvalidation()">
+                    <p>
+                        enter first name:
+                    </p>
+                    <input type="text" placeholder="first name" name="f-name" size="40">
+                    <p>
+                        enter second name:
+                    </p>
+                    <input type="text" placeholder="second name" name="s-name" size="40">
+                    <p>
+                        enter Email:
+                    </p>
+                    <input type="email" placeholder="enter your email" name="email">
+                    <p>
+                        enter age:
+                    </p>
+                    <input placeholder="age" name="age" id="numb">
+                    <code id="demo"></code>
+                    <p>
+                        select your gender:
+                    </p>
+                    <p style="color: rgb(6, 133, 133);">
+                        male
+                    </p>
+                    <input type="radio" name="gender" value="male"><br>
+                    <p style="color: rgb(9, 109, 109);">
+                        female
+                    </p>
+                    <input type="radio" name="gender" value="female">
+                    <p>
+                        enter password:
+                    </p>
+                    <input type="password" placeholder="enter your password" name="password">
+                    <p>
+                        re-enter password:
+                    </p>
+                    <input type="password" placeholder="re-enter your password" name="re-password"
+                        style="margin-bottom:40px ;">
+                    <nav class="sign-in-butons">
+                        <input type="submit" value="sign up">
+                        <a href="index.html" class="go-back">go back</a>
+                    </nav>
+
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

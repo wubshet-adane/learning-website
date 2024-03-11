@@ -1,0 +1,139 @@
+body {
+    background-image: url("../images/123.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#whole-div {
+    /*
+    background-image: url('images/edited way.jpg');
+    background-repeat: no-repeat;
+    background-size: fit-content;
+    background-position: center;
+    background-size: 80%;*/
+    margin: auto;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 100px;
+    border-radius: 34px;
+    box-shadow: 1px 1px 4px 4px rgb(62, 58, 58);
+
+}
+
+.header {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: monospace;
+    color: rgb(1, 166, 166);
+    font-size: xx-large;
+    padding: 20px;
+    background-color: rgba(240, 255, 255, 0.409);
+    box-shadow: 1px 1px 4px 4px rgb(62, 58, 58);
+}
+
+.header>div>a>div:hover {
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+
+.form-layout {
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 1px 4px 4px rgb(62, 58, 58);
+    text-align: center;
+    border-radius: 20px;
+    align-items: center;
+    background-color: rgba(168, 232, 232, 0.309);
+    transform: rotateZ(-10deg);
+
+}
+
+.form-layout:hover {
+    transform: rotateZ(0deg);
+    background-color: rgba(168, 232, 232, 0.782);
+}
+
+
+
+fieldset {
+    border-top: 1px solid rgb(205, 205, 205);
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-radius: 20px;
+
+}
+
+legend {
+    font-family: monospace;
+    color: rgb(1, 166, 166);
+    font-size: xx-large;
+    text-decoration: underline;
+    transform: rotate(-6deg);
+    padding: 20px;
+}
+
+form>p {
+    color: rgb(59, 58, 13);
+    font-size: larger;
+    font-family: cursive;
+    font-weight: bold;
+    opacity: 1;
+}
+
+form>input {
+    font-family: cursive;
+    border-radius: 4px;
+    border-color: aquamarine;
+    width: 50%;
+    height: 30px;
+
+}
+
+form>input:hover {
+    transform: scale(1.1);
+    border-color: rgb(47, 0, 255);
+}
+form>input:focus{
+    border-color: green;
+    color: rgb(0, 183, 255);
+}
+.sign-in-butons {
+    position: relative;
+    direction: rtl;
+}
+
+.sign-in-butons>input {
+    color: rgba(0, 0, 255, 0.668);
+    font-family: cursive;
+    background-color: rgba(0, 255, 255, 0.624);
+    border: none;
+    margin: 0px;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 7px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+.sign-in-butons>input:hover {
+    background-color: rgb(0, 255, 255);
+}
+
+@media only screen and (max-width:992px) {
+    #whole-div {
+        margin: auto;
+        background-color: aliceblue;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .form-layout {
+        width: 80%;
+    }
+
+}
