@@ -139,11 +139,12 @@ body {
 
 .upper {
     font-size: 30px;
-    color: rgb(0, 234, 243);
+    color: rgb(0, 247, 255);
     height: auto;
     border-right: 2px solid rgb(76, 76, 75);
     text-decoration: none;
-    padding: 5px 0 23px 0;
+    padding:0px 0 30px 0;
+    box-shadow: 1px 3px 3px black;
 }
 
 
