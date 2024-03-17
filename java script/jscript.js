@@ -16,5 +16,6 @@ function changeimage() {
     document.getElementById('changeimag').innerHTML = "<img class='footer-image' src='images/peace.jpg' style='border-radius: 10px;' width='200px'    height = '100px' alt = 'image not found because of some thing!' ></img > ";
 }
 function returnimg(){
+    
     document.getElementById('changeimag').innerHTML = "<img class='footer-image' src='images/owner.jpg' style='border-radius: 50px;' width='100px'    height='100px' alt='image not found because of some thing!'> ";
 }

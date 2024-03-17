@@ -18,24 +18,45 @@
         center {
             text-transform: capitalize;
         }
-#gallery{
-    color: rgb(0, 136, 255); 
-    background-color: azure;
-    box-shadow: 1px 1px 3px 3px rgb(0, 255, 72);
-    width: fit-content;
-    transform: rotateZ(-10deg);
-    font-size: 40px;
-    font-family:cursive;
-   
-}
-#gallery:hover{
-    transition: 1s;
-    transform: rotateY(180deg);
-    box-shadow: 1px 1px 3px 3px rgb(255, 149, 0);
-    color: rgb(255, 255, 255);
-    background-color: black;
-    
-}
+
+        #gallery {
+            color: rgb(0, 136, 255);
+            background-color: azure;
+            box-shadow: 1px 1px 3px 3px rgb(0, 255, 72);
+            width: fit-content;
+            transform: rotateZ(-10deg);
+            font-size: 40px;
+            font-family: cursive;
+
+        }
+
+        #gallery:hover {
+            transition: 1s;
+            transform: rotateY(180deg);
+            box-shadow: 1px 1px 3px 3px rgb(255, 149, 0);
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+
+        #side-div {
+            position: absolute;
+            right: 10%;
+            width: 20%;
+            margin: 1px;
+        }
+        #side-div2 {
+            background-color: aliceblue;
+            box-shadow: 1px 1px 3px 3px rgb(0, 0, 0);
+            border-radius: 10px;
+            margin: 1px;
+        }
+        #side-div2:hover {
+            background-color: rgb(221, 221, 221);
+            box-shadow: 1px 1px 3px 3px rgb(0, 0, 0);
+            border-radius: 10px;
+            margin: 1px;
+        }
+
         center>a>img {
             transform: rotateZ(10deg);
             box-shadow: 1px 1px 6px 6px rgb(0, 158, 45);
@@ -80,7 +101,7 @@
             box-sizing: border-box;
             width: 100%;
             height: 600px;
-            background-image: url('images/in class.jpg');
+            background-image: url('images/bestimage.png');
             background-repeat: no-repeat;
             background-position: center;
             background-clip: content-box;
@@ -147,7 +168,30 @@
                 <h1 id="labl" style=" font-family: 'Courier New', Courier, monospace; text-shadow: 3px 3px 3px black;
                 color: aqua; font-size: 300%;">www.SWEM courses.com</h1>
                 <div id="gallery">
-                    wellcome to <span style="color: aqua;">GALLERY</span> PAGE!</div>
+                    wellcome to <span style="color: aqua;">GALLERY</span> PAGE!
+                </div>
+                <div id="side-div">
+                    <div>
+                        <p id="side-div2"> 
+                            This is my website:
+                            and the most private or sequre website relative to other junk websites,
+                            if some body use this website to learn software engineering related cources
+                            and thus sence full confidence with my this website.
+                        </p>
+
+                    </div>
+
+
+                    <div id="side-div2">
+                        <p>
+                            This is my website:
+                            and the most private or sequre website relative to other junk websites,
+                            if some body use this website to learn software engineering related cources
+                            and thus sence full confidence with my this website.
+                        </p>
+
+                    </div>
+                </div>
 
                 <h2><a href="index.html">get started</a></h2>
             </div>
@@ -172,7 +216,7 @@
 
         </a><br>
         <a href="images/peace1.jpg">
-            <img  src="images/peace1.jpg" alt="image not found!" width="40%">
+            <img src="images/peace1.jpg" alt="image not found!" width="40%">
 
         </a><br>
         <a href="images/peace.jpg">
@@ -184,11 +228,11 @@
             <img style="transform: none;" src="images/wub.jpg" alt="image not found!" height="70%" width="30%">
         </a>
         <a href="images/in class.jpg">
-            <img  src="images/in class.jpg" alt="image not found!" width="40%">
+            <img src="images/in class.jpg" alt="image not found!" width="40%">
         </a>
 
         <a href="images/myself.png">
-            <img  src="images/myself.png" alt="image not found!" width="40%">
+            <img src="images/myself.png" alt="image not found!" width="40%">
         </a>
 
 
@@ -212,10 +256,10 @@
         </a>
 
         <a href="images/edited way.jpg">
-            <img  src="images/edited way.jpg" alt="image not found!" width="40%">
+            <img src="images/edited way.jpg" alt="image not found!" width="40%">
         </a>
         <a href="images/faf.jpg">
-            <img  src="images/faf.jpg" alt="image not found!" width="40%">
+            <img src="images/faf.jpg" alt="image not found!" width="40%">
         </a>
 
 
@@ -243,15 +287,16 @@
                 </p>
             </div>
         </div>
-        
+
         <div id="footer">
             <center>
                 copyright&copy; 2024 by Wubshet Adane:
             </center>
-            <a href="about-developer.html"id="changeimag" >
-                <img class="footer-image"onmouseover="changeimage()" src="images/editedwub.jpg" style="border-radius: 50px;" width="100px"
-                    height="100px" alt="image not found because of some thing!">
-            </a> 
+            <a href="about-developer.html" id="changeimag">
+                <img class="footer-image" onmouseover="changeimage()" src="images/editedwub.jpg"
+                    style="border-radius: 50px;" width="100px" height="100px"
+                    alt="image not found because of some thing!">
+            </a>
             <div class="sub-footer">
                 <p>
                     <a href="about-developer.html#contact">contact us</a>
@@ -262,7 +307,7 @@
                 <p>
                     <a href="">related</a>
                 </p>
-                
+
                 SWEMcourses.com is optimized for learning, programming, and training. pdfs might be simplified to
                 improve reading and basic understanding. Tutorials, references are constantly reviewed to
                 avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to
