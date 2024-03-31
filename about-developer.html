@@ -44,20 +44,35 @@
             width: 20%;
             margin: 1px;
         }
+
         #side-div2 {
-            background-color: aliceblue;
+            color: rgb(254, 255, 254);
+            font-family: cursive;
+            font-size: xx-large;
+            height: 200px;
+            background-color: rgb(39, 11, 142);
             box-shadow: 1px 1px 3px 3px rgb(0, 0, 0);
             border-radius: 10px;
-            margin: 1px;
+            margin: 10px;
+            overflow:hidden;
+
         }
+
         #side-div2:hover {
-            background-color: rgb(221, 221, 221);
+            transition: 0.7s ease;
+            color: rgb(39, 11, 142);
+            background-color: rgb(254, 255, 254);
             box-shadow: 1px 1px 3px 3px rgb(0, 0, 0);
             border-radius: 10px;
-            margin: 1px;
+            margin: 5px;
+        }
+
+        #side-div2>p {
+            margin: auto;
         }
 
         center>a>img {
+            transition: 0.7s ease;
             transform: rotateZ(10deg);
             box-shadow: 1px 1px 6px 6px rgb(0, 158, 45);
             border-style: groove;
@@ -67,13 +82,14 @@
         center>a>img:hover {
             transform: rotateZ(0deg);
         }
-
-        #labl:hover {
-            border: 1px solid black;
-            border-radius: 6px;
-            width: fit-content;
-
+        #labl {
+            background-color:  rgb(23, 0, 61);
+            border-radius: 10px;
+            margin: 20px;
+            width: 80%;
+            padding: 10px;
         }
+
 
         .sign-in {
             position: fixed;
@@ -156,6 +172,15 @@
             padding: 4px;
             text-decoration: none;
         }
+        @media (max-width:768px){
+            #side-div {
+            position: absolute;
+            width: 30%;
+            right: 0%;
+        }
+
+            
+        }
     </style>
 </head>
 
@@ -172,22 +197,17 @@
                 </div>
                 <div id="side-div">
                     <div>
-                        <p id="side-div2"> 
-                            This is my website:
-                            and the most private or sequre website relative to other junk websites,
-                            if some body use this website to learn software engineering related cources
-                            and thus sence full confidence with my this website.
-                        </p>
+                        <p id="side-div2">
+                            Wubshet Adane
+                            <img src="images/2024-02-28-09-02-07-727.jpg" alt="image not found" width="90px"height="150px">
 
+                        </p>
                     </div>
 
 
                     <div id="side-div2">
                         <p>
-                            This is my website:
-                            and the most private or sequre website relative to other junk websites,
-                            if some body use this website to learn software engineering related cources
-                            and thus sence full confidence with my this website.
+                            software engineering
                         </p>
 
                     </div>
@@ -279,8 +299,8 @@
                 <p>
                     <b><u>contact me:</u></b>
                 <ul class="contactlink" style="list-style-type: none;">
-                    <li><code>+251 967490154</code></li>
-                    <li><code><a href="">0967490154w@gmail.com</a></code></li>
+                    <li><code>+251 967 49 01 54</code></li>
+                    <li><code><a href="mailto:0967490154w@gmail.com">0967490154w@gmail.com</a></code></li>
                     <li><code><a href="index.html">www.SWEM courses.com</a></code></li>
                 </ul>
                 <code>Ethiopia</code>
