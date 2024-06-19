@@ -30,6 +30,17 @@
             color: black;
         }
     </style>
+    <script>
+        function formvalidation()
+        {
+           var x= document.signinform.email.value;
+           var z= document.signinform.password.value;
+           if(x==null||x=="" && z == null|| z == "")
+           {
+            window.prompt("please fill the text area!")
+           }
+        }
+    </script>
 </head>
 
 <body>
@@ -49,18 +60,19 @@
 
             <fieldset>
                 <legend style="font-family: monospace;color: rgb(24, 221, 221);font-size: xx-large;">enter correct
-                    information</legend>
-                <form action="www.gmail.com" method="post">
+                    information
+                </legend>
+                <form action="www.gmail.com" name="signinform" method="post">
                     <p>
                         Email:
                     </p>
-                    <input type="email" placeholder="enter your email" name="email" required>
+                    <input type="email" placeholder="enter your email" name="email" >
                     <p>
                         password:
                     </p>
-                    <input type="password" placeholder="enter your password" name="password" required>
+                    <input type="password" placeholder="enter your password" name="password" >
                     <nav class="sign-in-buton">
-                        <input type="submit" value="log in">
+                        <input type="submit" onclick="formvalidation()" value="log in">
                     </nav>
                     
                         if you haven't an account click 

@@ -19,6 +19,8 @@
             text-transform: capitalize;
         }
 
+
+
         #gallery {
             color: rgb(0, 136, 255);
             background-color: azure;
@@ -50,18 +52,19 @@
             font-family: cursive;
             font-size: xx-large;
             height: 200px;
-            background-color: rgb(39, 11, 142);
+            background-color:rgb(164, 204, 191);
             box-shadow: 1px 1px 3px 3px rgb(0, 0, 0);
             border-radius: 10px;
             margin: 10px;
-            overflow:hidden;
+            overflow: hidden;
+            transform: rotateZ(-10deg);
 
         }
 
-        #side-div2:hover {
+        summary:hover {
             transition: 0.7s ease;
-            color: rgb(39, 11, 142);
-            background-color: rgb(254, 255, 254);
+            background-color: rgb(0, 116, 116);
+            
             box-shadow: 1px 1px 3px 3px rgb(0, 0, 0);
             border-radius: 10px;
             margin: 5px;
@@ -82,8 +85,9 @@
         center>a>img:hover {
             transform: rotateZ(0deg);
         }
+
         #labl {
-            background-color:  rgb(23, 0, 61);
+            background-color: rgb(23, 0, 61);
             border-radius: 10px;
             margin: 20px;
             width: 80%;
@@ -153,6 +157,13 @@
             color: blue;
         }
 
+        .contactlink {
+            max-width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px 3px black;
+            background-color: rgba(39, 141, 124, 0.386);
+        }
 
         .contactlink>li {
 
@@ -172,14 +183,20 @@
             padding: 4px;
             text-decoration: none;
         }
-        @media (max-width:768px){
-            #side-div {
-            position: absolute;
-            width: 30%;
-            right: 0%;
-        }
 
-            
+        @media (max-width:900px) {
+
+            center>a>img {
+                border-radius: 50%;
+            }
+
+            #side-div {
+                position: absolute;
+                width: 30%;
+                right: 0%;
+            }
+
+
         }
     </style>
 </head>
@@ -196,18 +213,53 @@
                     wellcome to <span style="color: aqua;">GALLERY</span> PAGE!
                 </div>
                 <div id="side-div">
-                    <div>
-                        <p id="side-div2">
-                            Wubshet Adane
-                            <img src="images/2024-02-28-09-02-07-727.jpg" alt="image not found" width="90px"height="150px">
+                    <div id="side-div2">
+                        <p>
+                        <details>
+                            <summary style="font-size: medium; border: 1px solid white; border-radius: 7px;color: blue; background-color: aquamarine;">Major skills</summary>
+                            <ol style="position: relative; font-size: xx-small; text-align: left; background-color: white;color: blue;">
+                                <li>UX/UI design</li>
+                                <li>website development</li>
+                                <li>HTML</li>
+                                <li>
+                                    <details>
+                                        <summary>CSS</summary>
+                                        <li>bootstrap</li>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>Javascript</summary>
+                                        <li>node js </li>
+                                        <li>react</li>
+                                    </details>
+                                </li>
+                                <li>
+                                    php
+                                </li>
 
+                             </ol>
+                        </details>
                         </p>
+
                     </div>
 
 
                     <div id="side-div2">
                         <p>
-                            software engineering
+                        <details>
+                            <summary style="font-size: medium;border: 1px solid white; 
+                            border-radius: 7px;color: blue; background-color: aquamarine;">Minor skills</summary>
+                            <ol style="position: relative; font-size: xx-small; text-align: left;background-color: white;color: blue;">
+                                <li>logo design</li>
+                                <li>Graphics desin</li>
+                                <li>vedio edditing</li>
+                                <li>mobile app development</li>
+                                <li>software testing</li>
+                                <li>software conseltancy</li>
+
+                             </ol>
+                        </details>
                         </p>
 
                     </div>
@@ -270,7 +322,7 @@
         </a>
         <br>
 
-
+        <!--
         <a href="images/copyright.jpg">
             <img src="images/copyright.jpg" alt="image not found!" width="40%">
         </a>
@@ -280,7 +332,7 @@
         </a>
         <a href="images/faf.jpg">
             <img src="images/faf.jpg" alt="image not found!" width="40%">
-        </a>
+        </a>-->
 
 
         <div>
@@ -303,7 +355,7 @@
                     <li><code><a href="mailto:0967490154w@gmail.com">0967490154w@gmail.com</a></code></li>
                     <li><code><a href="index.html">www.SWEM courses.com</a></code></li>
                 </ul>
-                <code>Ethiopia</code>
+                <code style="font-family: cursive; font-size: 2rem;">Ethiopia</code>
                 </p>
             </div>
         </div>
