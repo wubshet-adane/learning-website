@@ -45,12 +45,15 @@ body {
     border-radius: 20px;
     align-items: center;
     background-color: rgba(168, 232, 232, 0.309);
+   /*
     transform: rotateZ(-10deg);
-
+    */
 }
 
 .form-layout:hover {
+/*
     transform: rotateZ(0deg);
+*/
     background-color: rgba(168, 232, 232, 0.782);
 }
 
